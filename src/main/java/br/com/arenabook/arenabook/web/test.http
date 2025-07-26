@@ -1,0 +1,42 @@
+# POST http://localhost:8080/users
+# Content-Type: application/json
+
+# {
+#     "name": "John Doe",
+#     "email": "john.doe@example.com",
+#     "password": "password"
+# }
+
+# GET http://localhost:8080/users
+
+# GET http://localhost:8080/users/1
+
+# POST http://localhost:8080/courts
+# Content-Type: application/json
+
+# {
+#     "name": "Court 1",
+#     "description": "Court 1 description",
+#     "pricePerHour": 10.0
+# }
+
+# GET http://localhost:8080/courts
+
+# GET http://localhost:8080/courts/1
+
+POST http://localhost:8080/reservations
+Content-Type: application/json
+
+{
+    "userId": 1,
+    "totalValue": 10.0,
+    "courtId": 1,
+    "startTime": "2025-07-05T14:00:00",
+    "endTime": "2025-07-05T15:00:00",
+    "status": "CREATED"
+}
+
+GET http://localhost:8080/reservations
+
+# GET http://localhost:8080/reservations/1
+
